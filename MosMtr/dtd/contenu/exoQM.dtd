@@ -1,0 +1,36 @@
+<!-- exercice QCM ou QCU -->
+
+<!ENTITY % contenuSPE "vide">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+
+<!ENTITY % elementsExercice SYSTEM "elementsExercice.dtd">
+%elementsExercice;
+
+
+<!ELEMENT exo (titre,sousTitre?,consigne?,question,reponses,colonesQM,interactions?)>
+<!ATTLIST exo 
+	%attrPages;
+	score CDATA "40"
+	type CDATA #FIXED "QM"
+	numDupli CDATA #IMPLIED
+	boutonsDisp (gauche|droite) "gauche"
+	boutonsRep (top|middle) "middle"
+	multiple (0|1) "0"
+	ordreAleatoire (oui|non) "non"
+	poidsEnPoints CDATA #IMPLIED>
+  
+<!ELEMENT question (%contenuQuestion;)*>
+<!ELEMENT reponses (reponse+)>
+<!ELEMENT reponse (%contenuZE;)*>
+<!ATTLIST reponse 
+	id CDATA #REQUIRED
+	styleR CDATA ""
+	prerequis CDATA #IMPLIED
+	poids CDATA #IMPLIED>
+	
+<!ELEMENT colonesQM (coloneQM+)>
+<!ELEMENT coloneQM (#PCDATA)>
+<!ATTLIST coloneQM 
+	id CDATA #REQUIRED>

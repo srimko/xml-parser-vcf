@@ -1,0 +1,90 @@
+.STY_zoneExercice{font:12pt Arial;color:#01458A;scrollbar-shadow-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF;scrollbar-track-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-arrow-color:#dae0e6;height:470px;position:absolute;width:690px;left:41px;top:55px;display:block;overflow:auto;}
+.STY_texteQC{font:12pt Arial;display:block;color:#01458A;}
+.STY_bordureQC{font:14px Arial;border-width:0px;border-color:#e5e5e5;padding:4px 4px 4px 5px;color:#4b4b4b;}
+.STY_reponseQC{font:15px Arial;padding:2px 0 2px 2px;color:#02368b;}
+.STY_reponseQCSel{font:15px Arial;padding:2px 0 2px 2px;color:#02368b;}
+.STY_bordureQCDessus{border:2px solid #016fcb;padding:2px 2px 2px 3px;}
+.STY_reponseQCDessus{font:15px Arial;padding:2px 0 2px 2px;color:#02368b;}
+a:hover{text-decoration:none}
+.STY_fondComtGTR{padding:3px;}
+.STY_zoneEchecExo{left:515px;top:550px;position:absolute;z-index:10;width:70px;height:77px;}
+.STY_zoneSuccesExo{left:515px;top:550px;position:absolute;z-index:10;width:70px;height:77px;}
+.STY_zoneVoirSolutions{left:760px;top:497px;position:absolute;z-index:99;width:200px;height:39px;}
+.STY_zoneExploreDessus{border:1px solid #e10226;text-align:center;}
+.STY_texteEXP{display:block;position:relative;}
+.STY_texteTAT{display:block;position:relative;}
+.STY_texteQM{display:block;}
+.STY_coloneQM{font:bold 15px Arial;padding:0 5px 10px 5px;color:#767676;text-align:center;}
+.STY_reponseQM{font:15px Arial;padding:6px 3px 6px 3px;color:#02368b;}
+.STY_zoneSEQH{_height:200px;min-height:200px;}
+.STY_reponseSEQ{border-top:1px dotted #5b7497;border-bottom-width:0px;border-right-width:0px;border-left-width:0px;padding-top:10px;margin-top:10px;}
+.STY_texteSEQ{padding-bottom:10px}
+.STY_zoneSEQV{_height:250px;display:block;min-height:250px;}
+.STY_reponseSEQV{_height:30px;margin-left:5px;min-height:30px;}
+.STY_texteSEQV{margin-right:5px;}
+.STY_objetSeqDessus{font:15px Arial;padding:3px;color:#016fcb;}
+.STY_objetSeq{font:15px Arial;padding:3px;color:#333333;}
+.STY_mobile1{font:bold 11px Arial;border:1px solid #e50005;padding:2px;background-color:#fff;color:#e60005;}
+.STY_mobile2{font:12px Arial;border:1px solid #80a2c4;padding:1px;color:#01458a;background-color:#c7cfdb;}
+.STY_cible1{font:bold 11px Arial;border:1px solid #e50005;padding:2px;background-color:#fff;color:#e60005;}
+.STY_cible2{font:12px Arial;border:1px solid #80a2c4;padding:1px;color:#01458a;background-color:#c7cfdb;}
+.STY_texteGD{display:block;position:relative;}
+.STY_mobile3{font:12px Arial;border:1px solid #80a2c4;padding:1px;color:#01458a;background-color:#efefef;}
+.STY_cible3{font:12px Arial;border:1px solid #80a2c4;padding:1px;color:#01458a;background-color:#efefef;}
+.STY_texteCURS{display:block;position:relative;}
+.STY_legendeCURS_g{color:#5F666D;font-size:90%;top:35px;left:-10px;position:absolute;}
+.STY_compteurCURS_0{letter-spacing:1px;color:#4e205a;font-size:100%;text-align:center;top:2px;left:105%;position:absolute;font-family:'Century Gothic','Avant Garde';}
+.STY_borneMax0{border-left-width:3px;border-style:solid;border-left-color:#00c000;border-right-width:0px;border-top-width:0px;border-bottom-width:0px;opacity:0.9;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);height:18px;margin-top:18px}
+.STY_borneMin0{border-left-width:3px;border-style:solid;border-left-color:#00c000;border-right-width:0px;border-top-width:0px;border-bottom-width:0px;opacity:0.9;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);height:18px;margin-top:18px}
+.STY_compteurCURS_1{letter-spacing:1px;color:#4e205a;font-size:100%;padding-top:5px;font-family:'Century Gothic','Avant Garde';}
+.STY_legendeCURS_h{color:#5F666D;left:35px;top:-5px;font-size:90%;position:absolute;}
+.STY_legendeCURS_b{color:#5F666D;font-size:90%;top:85%;left:35px;position:absolute;}
+.STY_imgBoutonQM{margin:3px 0 3px 0;width:26px;height:26px;}
+.STY_champTAT{font:15px Arial;padding:2px;color:#333333;}
+.STY_tempsRestant{display:inline;}
+.STY_zoneTempsRestant{height:60px;background-color:#8080ff}
+.STY_borneSol0{left:1px;position:absolute;height:13px;top:22px;}
+.STY_legendeCURS_d{position:absolute;left:90%;top:35px;font-size:90%;color:#5F666D;text-align:right;}
+.STY_borneSol1{left:23px;width:12px;}
+.STY_lienComt{color:#215a25;}
+.STY_zoneExplore{font:bold 12px Arial;color:#4b4b4b;text-align:center;}
+.STY_listeQC{font:13px Arial;margin-left:40px;}
+.STY_tableauQM{font:15px Arial;}
+.STY_selectTAT{font:15px Arial;padding:2px;color:#333333;}
+.STY_zoneVoirMesReponses{font:bold 14px Arial;color:#707173;position:absolute;left:634px;top:450px;width:208px;text-align:center;z-index:100;}
+.STY_boutonInit{display:inline;}
+.STY_labelTAT{font:15px Arial;color:#333333;}
+.STY_bordureQCFaux{border:1px solid #ff0000;}
+.STY_bordureQCJuste{border:1px solid #2aff00;}
+.STY_imgBoutonQMSol{border:1px solid #2aff00;}
+.STY_imgBoutonQCSol{border:1px solid #2aff00;}
+.STY_champTATJuste{color:#03b610;}
+.STY_selectTATJuste{color:#03b610;}
+.STY_labelTATJuste{color:#03b610;}
+.STY_objetSeqJuste{border:1px solid #03b610;}
+.STY_zoneExploreSol{border:1px solid #03b610;}
+.STY_mobile1Juste{border:1px solid #03b610;}
+.STY_mobile2Juste{border:2px solid #03b610;}
+.STY_mobile3Juste{border:2px solid #03b610;}
+.STY_mobileJuste{border:1px solid #03b610;}
+.STY_imgBoutonQCFaux{border:1px solid #ff0000;}
+.STY_imgBoutonQMFaux{border:1px solid #ff0000;}
+.STY_champTATFaux{color:#ff0000;}
+.STY_selectTATFaux{color:#ff0000;}
+.STY_labelTATFaux{color:#ff0000;}
+.STY_objetSeqFaux{border:1px solid #ff0000;}
+.STY_zoneExploreFaux{border:1px solid #ff0000;}
+.STY_mobile1Faux{border:1px solid #ff0000;}
+.STY_mobile2Faux{border:2px solid #ff0000;}
+.STY_mobile3Faux{border:2px solid #ff0000;}
+.STY_mobileFaux{border:1px solid #ff0000;}
+.STY_caseTATJuste{border:1px solid #03b610;}
+.STY_caseTATFaux{border:1px solid #f10119;}
+.STY_question{font:bold 14pt Arial;color:#02368b;margin-bottom:15px;display:block;}
+.STY_imgBoutonQC{width:26px;height:26px;}
+.STY_fond{background:url(../media/bgexo.png) no-repeat;background-position:left top;}
+.STY_lienDansZoneComt{font:14px Arial;color:#01458a;}
+.STY_boutonValider{display:inline;}
+.STY_nomModule{z-index:5;}
+.STY_contenuCommentaire{font:14px Arial;padding:1px;left:-7px;top:25px;color:#02368b;position:absolute;width:180px;height:370px;}
+.STY_titreCommentaire{display:inline;position:static;text-align:center;vertical-align:middle;}

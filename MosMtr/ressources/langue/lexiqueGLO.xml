@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<lexique>
+	<lex id="0">Glossaire</lex>
+	<lex id="1">Erreur : l’entrée n’a pas été trouvée.</lex>
+	<lex id="2">Mot entier</lex>
+	<lex id="3">Respecter la casse</lex>
+	<lex id="4">Commence par</lex>
+	<lex id="5">Finit par</lex>
+	<lex id="6">Rechercher</lex>
+	<lex id="7">L’élement cherché n’a pas été trouvé.</lex>
+	<lex id="8">éléments trouvés.</lex>
+	<lex id="9">Annuler</lex>
+	<lex id="10">Entrez un mot ou une suite de caractères.</lex>
+	<lex id="11">Résultat de la recherche</lex>
+	<lex id="12">Précisez votre recherche.</lex>
+	<lex id="13">Réduire tout</lex>
+	<lex id="14">Développer tout</lex>
+	<lex id="15">Accueil Glossaire</lex>
+	<lex id="16">Rechercher une entrée :</lex>
+	<lex id="17">Comment utiliser le glossaire</lex>
+	<lex id="18">Voir aussi :</lex>
+	<lex id="19">Imprimer la définition</lex>
+	<lex id="20">Commande + P pour imprimer</lex>
+	<lex id="21">Fermer</lex>
+</lexique>

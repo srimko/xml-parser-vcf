@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html oncontextmenu="return false" style="height:100%">
+<head>
+<title>&#160;</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<script type="text/javascript">
+var oPage;
+var oRef;
+var oZone;
+function chargeNote(){
+	oRef=window.opener;
+	document.title=oRef.donneLex(64);
+	oRef.SCO_chargerNotesSSP();
+	oZone=document.getElementById("zoneNote");
+	oPage=oRef.oSco.donnePage(oRef.oSco.numPageCourante);
+	oZone.focus();
+	oZone.value=oPage.notes;
+	if (oRef.APIgetValue("cmi.mode")!="normal"){
+		document.getElementById("btnOK").disabled=true;
+		var msg="Notes are in read-only mode";
+		if (oRef.donneLangue()=="fr"){msg="Les notes sont en mode lecture seule";}
+		alert(msg);
+	}
+}
+function sauveNote(){
+	var valZn=oZone.value;
+	valZn=valZn.replace(/\[,\]/g,",");
+	valZn=valZn.replace(/\[\.\]/g,".");
+	oPage.notes=valZn;
+	try {
+		var oZoneNE=oRef.contenu.PF_donneObjet("STY_zoneNoteExiste");
+		if (oZoneNE!=null){
+			if (oPage.notes==""){
+				oZoneNE.style.display="none";
+			} else {
+				oZoneNE.style.display="";
+			}
+		}
+	}catch(e){}
+	
+	var oDate = new Date();
+	var mois=oDate.getMonth()+1;
+	if (mois<10){
+		mois='0'+mois;
+	}
+	var jour=oDate.getUTCDate();
+	if (jour<10){
+		jour='0'+jour;
+	}
+	var heure=oDate.getUTCHours();
+	if (heure<10){
+		heure='0'+heure;
+	}
+	var minute=oDate.getUTCMinutes();
+	if (minute<10){
+		minute='0'+minute;
+	}
+  	oPage.dateNotes=oDate.getFullYear()+"-"+mois+"-"+jour+"T"+heure+":"+minute;
+	// sauve ssp
+	var val=oRef.conserveAutresNotes;
+	for (var j=0;j<oRef.oSco.tabPages.length;j++){
+		var oPg=oRef.oSco.tabPages[j];
+		if (oPg.notes!=""){
+			if (val!=""){val+="[,]";}
+			val+=oRef.oSco.identifiant+"[.]"+oPg.code+"[.]"+oRef.oSco.titre+"[.]"+oPg.titre+"[.]"+oPg.dateNotes+"[.]"+oPg.notes;	
+		}
+	}
+	oRef.SCO_modifAllocation("stg_notesU",val,"course");
+	window.close();
+}
+</script>
+<style>
+.barreBFenB{bottom:12px;text-align:right;padding-top:10px;position:absolute;left:0px;right:0px;padding-right:1px}
+* html .barreBFenB{right:auto;width:100%}
+.boutonFen{width:98px;font:13px Tahoma;padding:1px;margin-right:7px}
+body {background-color:#E7E7E4;cursor:default;font:13px Tahoma,Geneva,Arial;margin:20px;margin-right:0px;padding-right:0px}
+textarea {overflow:auto;overflow-x:hidden;height:300px;width:98%;font:14px Tahoma,Geneva,Arial,display:block;padding:4px;border:1px solid #666666;padding-left:8px;background-color:#ffffcc;cursor:text;margin-bottom:1px;padding-top:8px}
+</style>
+</head>
+<body onload="chargeNote()" style="margin:0px;height:100%">
+<textarea id="zoneNote">
+</textarea>
+<div class="barreBFenB">
+<button class="boutonFen" id="btnOK" onclick="sauveNote()">OK</button><button class="boutonFen" onclick="window.close()"><script>document.write(window.opener.donneLex(95))</script></button>
+</div>
+</body>
+</html>

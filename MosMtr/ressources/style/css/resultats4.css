@@ -1,0 +1,21 @@
+.STY_zoneEvalRes{height:50px;margin-bottom:30px;width:410px}
+.STY_scoreAtteint{margin:15px 25px 0 17px;text-align:center;overflow-x:hidden;scrollbar-shadow-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF;scrollbar-track-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-arrow-color:#dae0e6;color:#010101;overflow:auto;display:block;font-size:18px;font-family:'Century Gothic','Avant Garde';}
+.STY_scoreTotal{font:bold 20px Verdana;top:50px;color:#d21d64;display:block;position:absolute;}
+.STY_pourcentRequis{font:bold 15px Arial;display:inline;color:#6f6e6e;}
+.STY_zoneEchecEval{height:50px}
+.STY_zoneQuestRes{height:50px}
+.STY_zoneSuccesEval{position:absolute;width:150px;top:620px;left:80px;}
+.STY_zoneLienDiplome{width:202px;top:80px;left:704px;position:absolute;height:32px;}
+.STY_commentaireRes{background:url(../media/zonecommzntres.png) no-repeat;font:bold 22px Arial;padding:50px 8px 10px 8px;width:183px;top:338px;left:26px;position:absolute;display:block;height:130px;overflow:auto;color:#002d5b;scrollbar-arrow-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-track-color:#dae0e6;scrollbar-3dlight-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-shadow-color:#FFFFFF;overflow-x:hidden;background-position:left top;text-align:center;}
+.STY_detailsRes{padding-right:20px;color:#333333;scrollbar-shadow-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF;scrollbar-track-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-arrow-color:#dae0e6;height:370px;position:absolute;width:670px;left:237px;top:145px;display:block;overflow:auto;overflow-x:hidden;}
+.STY_tableauResEntete{font:12px Arial;display:none;color:#333333;}
+.STY_tabResScore{background:url(../media/scorebg.png) no-repeat;font:bold 22px Arial;width:145px;color:#774548;background-position:left top;text-align:center;}
+.STY_lienCorrige:hover{text-decoration:none;}
+.STY_lienCorrige{font:bold 15px Arial;padding:17px 0 17px 0;background-position:-5px top;display:inline-block;color:#774548;text-decoration:none;float:left;background-repeat:no-repeat;width:360px;}
+.STY_boutonValider{margin:30px 0 0 13px;z-index:10;}
+.STY_pourcentAtteint{height:10px;z-index:0;top:120px;left:237px;width:50px;position:absolute;}
+.STY_fond{background:url(../media/bgresltatasdeux2.png) no-repeat;background-position:left top;}
+.STY_tabResIco{background:url(../media/fdicone.png) no-repeat;background-position:left top;padding-left:0px;width:101px;float:left;}
+.STY_tabResNivCert{display:none;}
+.STY_tableauRes{width:670px;}
+.STY_tableauResCellule{background:url(../media/cellulecentrebg.png) no-repeat;font:bold 15px Arial;background-position:left top;color:#774548;margin-left:0px;padding-left:20px;}

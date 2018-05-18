@@ -1,0 +1,46 @@
+<!-- exercice texte a trou -->
+
+<!ENTITY % contenuSPE "trou|label">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+
+<!ENTITY % elementsExercice SYSTEM "elementsExercice.dtd">
+%elementsExercice;
+
+<!ELEMENT exo (titre,sousTitre?,consigne?,question?,texteTrou,reponses,interactions?)>
+<!ATTLIST exo 
+	%attrPages;
+	score CDATA "30"
+	type CDATA #FIXED "TAT"
+	numDupli CDATA #IMPLIED
+	sensibleCasse (oui|non) "non"
+	respectAccents (oui|non) "non"
+	ordreAleatoire (oui|non) "non"
+	scoreManuel CDATA #IMPLIED>
+
+<!ELEMENT question (%contenuQuestion;)*>
+<!ELEMENT reponses (reponse*)>
+<!ELEMENT reponse (#PCDATA)>
+<!ATTLIST reponse 
+	ref CDATA #REQUIRED
+	id CDATA #REQUIRED
+	styleR %styleR; "ng">	
+
+<!ELEMENT texteTrou (%contenuZE;|trou|label)*>
+
+<!ELEMENT trou EMPTY>
+<!ATTLIST trou  
+	id CDATA #REQUIRED
+	style CDATA #IMPLIED
+	title CDATA #IMPLIED
+	alt CDATA #IMPLIED
+	size CDATA #IMPLIED
+	maxlength CDATA #IMPLIED
+	ordreAleatoire (oui|non) "non"
+	type (champ|select|zone|checkbox|radio) "champ">
+	
+<!ELEMENT label (%contenuDiv;)*>
+<!ATTLIST label 
+	for CDATA #IMPLIED
+	%attrBase;>

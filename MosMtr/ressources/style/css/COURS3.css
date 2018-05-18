@@ -1,0 +1,6 @@
+.STY_fond{background:url(../media/bgconclusion.png) no-repeat;background-position:left top;}
+.STY_zoneTitre{background:url(../media/bgtitre.png) no-repeat;color:#fff;font-family:Arial;width:960px;position:absolute;display:block;background-position:left top;}
+.STY_nomModule{margin-left:10px;font-style:italic;font-size:13px;display:inline;}
+.STY_nomEtape{font-weight:bold;font-size:16px;margin-left:40px;display:inline;}
+.STY_titrePage{display:inline;font-weight:bold;font-size:16px;}
+.STY_zoneCours{left:170px;top:60px;width:780px;height:460px;}

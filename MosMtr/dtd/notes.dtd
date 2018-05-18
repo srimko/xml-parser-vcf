@@ -1,0 +1,61 @@
+<!-- notes de l'auteur -->
+
+<!ENTITY % formats "#PCDATA|b|div|table|span|font|br|p|u|i">
+<!ENTITY % attrBase " id ID #IMPLIED class CDATA #IMPLIED style CDATA #IMPLIED ">
+
+<!ENTITY % cellhalign "align (left|center|right|justify|char) #IMPLIED">
+<!ENTITY % cellvalign "valign (top|middle|bottom|baseline) #IMPLIED">
+
+<!ELEMENT notes (note*)>
+	
+<!ELEMENT note (%formats;)*>
+ <!ATTLIST note  
+	id CDATA #REQUIRED
+	dateMAJ CDATA ""
+	auteur CDATA ""
+	courrielAuteur CDATA #IMPLIED>
+	
+<!ELEMENT br EMPTY>
+<!ELEMENT b (%formats;)*>
+<!ELEMENT i (%formats;)*>
+<!ELEMENT u (%formats;)*>
+<!ELEMENT span (%formats;)*>
+<!ATTLIST span 
+	%attrBase;>
+<!ELEMENT p (%formats;)*>
+<!ATTLIST p
+	align CDATA #IMPLIED
+	%attrBase;>	
+<!ELEMENT div (%formats;)*>
+<!ATTLIST div
+	align CDATA #IMPLIED
+	%attrBase;>
+
+<!ELEMENT table (tr+)>
+<!ATTLIST table 
+	border CDATA "0"
+	bordercolor CDATA #IMPLIED
+	bgColor CDATA #IMPLIED
+	cellspacing CDATA "0"
+	cellpadding CDATA "3"
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+	%attrBase;
+	%cellhalign;
+  	%cellvalign;>
+  	
+<!ELEMENT tr (td+)>
+<!ATTLIST tr 
+	%attrBase;
+	%cellhalign;
+  %cellvalign;
+  height CDATA #IMPLIED>
+<!ELEMENT td (%formats;)*>
+<!ATTLIST td 
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+	colspan CDATA #IMPLIED
+	rowspan CDATA #IMPLIED
+	%attrBase;
+	%cellhalign;
+  %cellvalign;>

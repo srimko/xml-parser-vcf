@@ -1,0 +1,46 @@
+
+<!ENTITY % contenuSPE "curseur">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+
+<!ENTITY % elementsExercice SYSTEM "elementsExercice.dtd">
+%elementsExercice;
+
+<!ELEMENT exo (titre,sousTitre?,consigne?,question?,texteCurseur,reponses,interactions?)>
+<!ATTLIST exo 
+	%attrPages;
+	score CDATA "30"
+	type CDATA #FIXED "CURS"
+	numDupli CDATA #IMPLIED
+	retourIncorrect (1|0) "0">
+
+<!ELEMENT question (%contenuQuestion;)*>
+<!ELEMENT reponses (reponse*)>
+<!ELEMENT reponse EMPTY>
+<!ATTLIST reponse 
+	ref CDATA #REQUIRED
+	styleR %styleR; "ng"
+	min CDATA #REQUIRED
+	max CDATA #REQUIRED>	
+
+<!ELEMENT texteCurseur (%contenuZE;|curseur)*>
+
+<!ELEMENT curseur EMPTY>
+<!ATTLIST curseur  
+	id CDATA #REQUIRED
+	class CDATA "cursA"
+	style CDATA #IMPLIED
+	vertical (0|1) "1"
+	valInit CDATA "50"
+	labelMin CDATA #IMPLIED
+	labelMax CDATA #IMPLIED
+	poids CDATA #IMPLIED
+	valMin CDATA "0"
+	valMax CDATA "100"
+	nbDecimales CDATA "1"
+	afficheCompteur (0|1) "1"
+	titre CDATA ""
+	imgH CDATA #IMPLIED
+	imgW CDATA #IMPLIED
+	unite CDATA #IMPLIED>

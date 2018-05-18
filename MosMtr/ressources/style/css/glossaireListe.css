@@ -1,0 +1,10 @@
+.STY_fondListeGLO{font:13px Arial;padding:0px;color:#2D2D2D;}
+a{font-family:Arial;text-decoration:none;}
+a:visited{}
+.STY_arboDivDossier{width:137px;}
+.STY_arboEntree{padding:3px 0 3px 33px;font-size:12px;color:#fff;display:inline-block;font-family:'Century Gothic','Avant Garde';font-weight:bold;}
+.STY_arboEntreeSel{font:bold 12px Arial;padding:3px 0 3px 33px;display:inline-block;color:#333333;}
+.STY_imgDossierGlo{display:none}
+.STY_arboDivDossierTitre{width:188px;display:block;}
+.STY_arboNomDossier{padding:7px 0 7px 33px;border-bottom-color:#e4bfd8;border-left-width:0px;border-right-width:0px;border-top-width:0px;font-family:'Century Gothic','Avant Garde';display:block;color:#fff;font-size:12px;font-weight:bold;}
+a.STY_arboNomDossier:hover{font:bold 12px Arial;padding:7px 0 7px 33px;display:block;color:#e22128;}

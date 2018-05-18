@@ -1,0 +1,175 @@
+<!-- Elements generaux utilises par cours,extra,exo  -->
+
+<!ENTITY % formats "#PCDATA|b|span|font|br|hr|u|i|sup|sub|code">
+<!ENTITY % contenuZE "%formats;|p|div|table|img|ol|ul|clipAV|paraBascule|zoneLien|lienGlossaire|lienExtra|lienHypertexte|lienPage|lienDetail|blockquote|h2|h3|h4">
+<!ENTITY % contenuDiv "%contenuZE;|%contenuSPE;">
+<!ENTITY % contenuLien "%contenuZE;">
+<!ENTITY % attrBase " id ID #IMPLIED class CDATA #IMPLIED style CDATA #IMPLIED ">
+<!ENTITY % cellhalign "align CDATA #IMPLIED">
+<!ENTITY % cellvalign "valign CDATA #IMPLIED">
+
+<!ENTITY % attrPages 
+	"duree CDATA #IMPLIED
+	delai CDATA #IMPLIED
+	desactiveSuivant (oui|non) 'non'
+	partieTitre (oui|non) 'oui'
+	partieDetail (oui|non) 'oui'
+	positionPerso CDATA #IMPLIED">
+	
+<!ELEMENT br EMPTY>
+<!ELEMENT hr EMPTY>
+
+<!ELEMENT ul (%formats;|li|ul|ol)*>
+<!ELEMENT ol (%formats;|li|ul|ol)*>
+<!ATTLIST ul 
+	type CDATA #IMPLIED
+	%attrBase;>
+<!ATTLIST ol 
+	type CDATA #IMPLIED
+	%attrBase;>
+<!ELEMENT li (%contenuDiv;)*>
+
+<!ELEMENT b (%contenuDiv;)*>
+<!ELEMENT i (%contenuDiv;)*>
+<!ELEMENT u (%contenuDiv;)*>
+<!ELEMENT span (%contenuDiv;)*>
+<!ATTLIST span 
+	%attrBase; 
+	xml:space (default|preserve) 'default'>
+<!ELEMENT sub (%contenuDiv;)*>
+<!ATTLIST sub %attrBase;>
+<!ELEMENT sup (%contenuDiv;)*>
+<!ATTLIST sup %attrBase;>
+
+<!ELEMENT code (%contenuDiv;)*>
+<!ATTLIST code %attrBase;>
+
+<!ELEMENT h2 (%contenuDiv;)*>
+<!ATTLIST h2 %attrBase;>
+<!ELEMENT h3 (%contenuDiv;)*>
+<!ATTLIST h3 %attrBase;>
+<!ELEMENT h4 (%contenuDiv;)*>
+<!ATTLIST h4 %attrBase;>
+
+<!ELEMENT blockquote (%contenuDiv;)*>
+<!ATTLIST blockquote %attrBase;>
+	
+<!ELEMENT font (%contenuDiv;)*>
+<!ATTLIST font 
+	color CDATA #IMPLIED
+	face CDATA #IMPLIED
+	size CDATA #IMPLIED
+	%attrBase;>
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img 
+	src CDATA #REQUIRED
+	border CDATA #IMPLIED
+	alt CDATA #IMPLIED
+	title CDATA #IMPLIED
+	hspace CDATA #IMPLIED
+	vspace CDATA #IMPLIED
+	align CDATA #IMPLIED
+	%attrBase;
+	name CDATA #IMPLIED
+	height CDATA #IMPLIED
+  	width CDATA #IMPLIED>
+
+<!ELEMENT zoneLien (%contenuDiv;)*>
+<!ATTLIST zoneLien 
+	%attrBase;
+	refImg CDATA #REQUIRED
+  	gauche CDATA #IMPLIED
+  	haut CDATA #IMPLIED
+  	label CDATA #IMPLIED
+  	poids CDATA #IMPLIED
+  	objectif CDATA #IMPLIED
+  	numStyle CDATA #IMPLIED>
+ 	
+<!ELEMENT table (tr*)>
+<!ATTLIST table 
+	border CDATA "0"
+	bordercolor CDATA #IMPLIED
+	bgColor CDATA #IMPLIED
+	cellspacing CDATA "0"
+	cellpadding CDATA "3"
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+	%attrBase;
+	%cellhalign;
+  	%cellvalign;>
+  	
+<!ELEMENT tr (td+)>
+<!ATTLIST tr 
+	%attrBase;
+	%cellhalign;
+  %cellvalign;
+  height CDATA #IMPLIED>
+<!ELEMENT td (%contenuDiv;)*>
+<!ATTLIST td 
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+	colspan CDATA #IMPLIED
+	rowspan CDATA #IMPLIED
+	%attrBase;
+	%cellhalign;
+  %cellvalign;>
+
+<!ELEMENT vide EMPTY>
+
+
+<!ELEMENT lienGlossaire (%contenuLien;)*>
+<!ATTLIST lienGlossaire 
+	ref CDATA #REQUIRED>
+	
+<!ELEMENT lienPage (%contenuLien;)*>
+<!ATTLIST lienPage 
+	ref CDATA #REQUIRED>
+
+<!ELEMENT lienExtra (%contenuLien;)*>
+<!ATTLIST lienExtra 
+	ref CDATA #REQUIRED
+	type CDATA "">
+	
+<!ELEMENT lienDetail (%contenuLien;)*>
+<!ATTLIST lienDetail 
+	num CDATA #REQUIRED>
+	
+<!ELEMENT lienHypertexte (%contenuLien;)*>
+<!ATTLIST lienHypertexte 
+	href CDATA #REQUIRED>
+	
+<!ELEMENT clipAV (paramAV*)>
+<!ATTLIST clipAV 
+	src CDATA #REQUIRED
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+	demarreAuto (true|false) "false"
+	lecteur  CDATA ""
+	boucle (true|false) "false"
+	%attrBase;
+	title CDATA #IMPLIED
+	align CDATA #IMPLIED
+	id CDATA ""
+	params CDATA "">
+
+<!ELEMENT paramAV EMPTY>
+<!ATTLIST paramAV
+	nom CDATA ""
+	valeur CDATA "">
+
+<!-- contenu variable selon cours ou autre -->
+<!ELEMENT p (%contenuDiv;)*>
+<!ATTLIST p
+	align CDATA #IMPLIED
+	%attrBase;>
+	
+<!-- pour l'align complexe -->
+<!ELEMENT div (%contenuDiv;)*>
+<!ATTLIST div
+	align CDATA #IMPLIED
+	%attrBase;>
+	
+<!ELEMENT paraBascule (titrePB,corpsPB)>
+<!ELEMENT titrePB (%formats;)*>
+<!ELEMENT corpsPB (%contenuDiv;)*>

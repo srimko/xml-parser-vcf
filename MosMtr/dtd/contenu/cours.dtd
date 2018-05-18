@@ -1,0 +1,40 @@
+<!ENTITY % contenuSPE "vide">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+<!ENTITY % contenuTexteCours "%contenuZE;|%contenuSPE;">
+
+<!ELEMENT cours (titre,sousTitre?,texte,commentaires?)>
+<!ATTLIST cours 
+	%attrPages;	
+	type CDATA "COURS"
+	animListes CDATA #IMPLIED
+	animImages CDATA #IMPLIED
+	delaiAnim CDATA #IMPLIED
+	diaporama CDATA #IMPLIED>
+
+<!ELEMENT titre (%formats;)*>
+<!ELEMENT sousTitre (%formats;)*>
+<!ELEMENT texte (%contenuTexteCours;)*>
+<!ELEMENT commentaires (commentaire)*>
+<!ELEMENT commentaire (%contenuZE;)*>
+<!ATTLIST commentaire 
+	num CDATA #REQUIRED
+	titre CDATA ""
+	pX CDATA ""
+	pY CDATA ""
+	pL CDATA ""
+	pH CDATA ""
+	bas CDATA #IMPLIED
+	droite CDATA #IMPLIED
+	duree CDATA #IMPLIED
+	delai CDATA #IMPLIED
+	styBulle CDATA #IMPLIED
+	orign CDATA #IMPLIED
+	fonduE CDATA #IMPLIED
+	fonduS CDATA #IMPLIED
+	initX CDATA #IMPLIED
+	initY CDATA #IMPLIED
+	vitesse CDATA #IMPLIED
+	defil CDATA #IMPLIED
+	vdefil CDATA #IMPLIED>

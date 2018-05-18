@@ -1,0 +1,8 @@
+.STY_fondMenuLMS{padding:0px;margin:0px;background-color:#fff;}
+.STY_titreFormJS{background:url(../media/bgtitreformation.png) no-repeat;padding:13px 0 8px 35px;background-position:left top;color:#01458a;position:absolute;left:277px;top:0px;width:680px;font-size:25px;font-family:'Century Gothic','Avant Garde';}
+.STY_titreEtapeJS{width:285px;overflow:hidden}
+.STY_zoneBoutonActivitePrecedente{position:absolute;top:17px;left:349px;overflow:hidden;width:42px;height:42px}
+.STY_zoneBoutonActiviteSuivante{position:absolute;top:13px;left:391px;overflow:hidden;width:42px;height:42px}
+.STY_zoneBoutonQuitter{position:absolute;left:140px;top:12px;width:41px;height:41px}
+.STY_zoneBoutonBascPlan{position:absolute;left:90px;top:12px;width:41px;height:41px}
+.STY_titreSequencePere{font:bold 18px Arial;top:55px;position:absolute;left:16px;width:600px;text-transform:uppercase;color:#fff;}

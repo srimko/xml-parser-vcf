@@ -1,0 +1,20 @@
+.STY_zoneEvalRes{height:50px;margin-bottom:30px;width:410px}
+.STY_scoreAtteint{margin:15px 25px 0 17px;text-align:center;overflow-x:hidden;scrollbar-shadow-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF;scrollbar-track-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-arrow-color:#dae0e6;color:#010101;overflow:auto;display:block;font-size:18px;font-family:'Century Gothic','Avant Garde';}
+.STY_scoreTotal{font:bold 50px Verdana;color:#d21d64;display:inline;}
+.STY_pourcentRequis{font:bold 15px Arial;display:inline;color:#6f6e6e;}
+.STY_zoneEchecEval{height:50px}
+.STY_zoneQuestRes{height:50px}
+.STY_zoneSuccesEval{position:absolute;width:150px;top:620px;left:80px;}
+.STY_zoneLienDiplome{height:32px;position:absolute;left:704px;top:80px;width:202px;}
+.STY_commentaireRes{font:bold 15px Arial;border:1px solid #01458a;padding:5px;background-color:#80a2c4;width:200px;top:351px;left:10px;position:absolute;display:block;height:162px;overflow:auto;color:#FFFFFF;scrollbar-arrow-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-track-color:#dae0e6;scrollbar-3dlight-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-shadow-color:#FFFFFF;overflow-x:hidden;}
+.STY_detailsRes{overflow-x:hidden;padding-right:20px;overflow:auto;display:block;top:193px;left:240px;width:670px;position:absolute;height:330px;scrollbar-arrow-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-track-color:#dae0e6;scrollbar-3dlight-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-shadow-color:#FFFFFF;color:#333333;}
+.STY_tableauResEntete{font:12px Arial;display:none;color:#333333;}
+.STY_tabResScore{display:none;padding-left:10px;text-align:right;}
+.STY_lienCorrige:hover{text-decoration:none;}
+.STY_lienCorrige{background:url(../media/bglienresult2.png) no-repeat;font:bold 16px Arial;padding:22px 10px 19px 52px;margin-bottom:1px;text-decoration:none;color:#550a0f;display:inline-block;width:606px;background-position:left top;}
+.STY_boutonValider{margin:30px 0 0 13px;z-index:10;}
+.STY_pourcentAtteint{display:inline;}
+.STY_fond{background:url(../media/bgresulttest.png) no-repeat;background-position:left top;}
+.STY_tableauResCellule{padding-bottom:2px;}
+.STY_tabResIco{display:none;float:left;}
+.STY_tabResNivCert{display:none;}

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>&#160;</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript">
+var oFen=parent.oSco;
+	
+function lanceForm(){
+	var adrEnvoi=oFen.evaluation.formEnvoiReponses;
+	if (adrEnvoi.indexOf("../")==0){adrEnvoi="../"+adrEnvoi;}
+	document.envRep.action=adrEnvoi;
+	document.envRep.mosFormXML.value=oFen.evaluation.donneFormXML("utf-8");
+	document.envRep.mosFormXML.value=document.envRep.mosFormXML.value.replace(/>/g,'>\r\n');
+	document.envRep.submit();
+	oFen.evaluation.formEnvoiReponses='';
+	if (parent.oSco==null){
+		if (!oFen.evaluation.evalPageResultats){
+			window.opener.allerEtapeSuivante=true;
+			window.opener.SCO_pageSuivante();
+		} else {
+			window.opener.contenu.location = window.opener.RACINE_stage+"contenu/local/resultats."+oFen.version;
+		}
+		window.close();
+	}
+}
+</script>
+</head>
+<body onload="lanceForm()">
+<form name="envRep" acceptCharset="utf-8" target="_self" method="post"><input type="hidden" name="mosFormXML"/></form>
+</body>
+</html>

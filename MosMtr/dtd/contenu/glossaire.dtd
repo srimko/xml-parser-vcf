@@ -1,0 +1,26 @@
+<!-- special glossaire -->
+
+<!ENTITY % contenuSPE "vide">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+
+<!ELEMENT glossaire (dossier*)>
+	
+<!ELEMENT dossier (nom,dossier*,entree*)>
+<!ATTLIST dossier 
+	id ID #REQUIRED>
+	
+<!ELEMENT nom (#PCDATA)>
+	
+<!ELEMENT entree (mot,def,voirAussi*)>
+<!ATTLIST entree 
+	id ID #REQUIRED
+	posDocs CDATA #IMPLIED>
+
+<!ELEMENT mot (#PCDATA)>
+<!ELEMENT def (%contenuZE;)*>	
+<!ELEMENT voirAussi EMPTY>
+<!ATTLIST voirAussi 
+	ref IDREF #REQUIRED>
+	

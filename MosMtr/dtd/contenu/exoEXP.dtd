@@ -1,0 +1,23 @@
+<!-- exercice Expolaration texte ou image -->
+
+<!ENTITY % contenuSPE "vide">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+
+<!ENTITY % elementsExercice SYSTEM "elementsExercice.dtd">
+%elementsExercice;
+
+<!ELEMENT exo (titre,sousTitre?,consigne?,question,texteExplore,interactions?)>
+<!ATTLIST exo 
+	%attrPages;
+	multi (oui|non) "oui"
+	score CDATA "30"
+	voirZones (oui|non) "oui"
+	type CDATA #FIXED "EXP"
+	numDupli CDATA #IMPLIED
+	legendes (oui|non) "non"
+	poidsEnPoints (oui|non) "non">
+  
+<!ELEMENT question (%contenuQuestion;)*>
+<!ELEMENT texteExplore (%contenuZE;)*>

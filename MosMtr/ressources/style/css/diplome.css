@@ -1,0 +1,15 @@
+.STY_fondDiplome{font:13px Arial;color:#2D2D2D;background-color:#fff;}
+.STY_titreDIPL{font:bold 50px Arial;position:absolute;width:400px;height:25px;left:230px;top:100px;color:#333333;z-index:10;}
+.STY_libelleDIPL{font:14px Arial;padding:2px 0 0 2px;color:#333333;z-index:10;width:400px;height:50px;top:300px;left:230px;position:absolute;}
+.STY_nomEtapeDIPL{color:#e60005;display:inline;font-weight:bold;}
+.STY_titreFormationDIPL{display:inline;color:#e60005;font-weight:bold;}
+.STY_scoreAtteintDIPL{color:#e22128;display:inline;}
+.STY_scoreTotalDIPL{color:#e22128;display:inline;}
+.STY_zoneNonImprimDIPL{border:1px none #878787;left:608px;top:22px;width:200px;font-size:80%;position:absolute;z-index:10;}
+a{color:#333333;font-weight:bold;font-size:12px;font-family:'Century Gothic','Avant Garde';}
+a:hover{text-decoration:none}
+.STY_nomModuleDIPL{color:#666666;}
+.STY_pourcentAtteintDIPL{color:#e22128;display:inline;}
+.STY_idUtilDIPL{text-transform:none;}
+.STY_pourcentRequisDIPL{color:#e22128;display:inline;}
+.STY_dateCouranteDIPL{display:inline;}

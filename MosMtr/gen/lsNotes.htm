@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html>
+<head>
+<title>Notes</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script type="text/javascript">
+var oRef;
+function ObjNote(tabI){
+	this.titreActivite=tabI[2];
+	this.titrePage=tabI[3];
+	this.date=tabI[4];
+	this.contenu=tabI[5];
+	
+	this.renduHTML=ON_renduHTML;
+	
+}
+function compareNote(o1,o2){
+	return o1.date>o2.date;
+}
+function chargeNote(){
+	oRef=window.opener;
+	document.title=oRef.donneLex(102)+" - "+oRef.oSco.titreStage;
+	document.getElementById("titreLs").innerHTML=document.title;
+	var tabObjNotes=new Array();
+	var vNotes=oRef.SCO_donneAllocation("stg_notesU","course");
+	
+	
+	if (vNotes!=""){
+		var tabNotes=vNotes.split("[,]");
+		for (var m=0;m<tabNotes.length;m++){
+			tabObjNotes[m]=new ObjNote(tabNotes[m].split("[.]"));
+		}
+		tabObjNotes.sort(compareNote);
+		var resH="";
+		for (var m=0;m<tabObjNotes.length;m++){
+			resH+=tabObjNotes[m].renduHTML();
+		}
+		document.getElementById("notesU").innerHTML=resH;
+	}
+}
+function ON_renduHTML(){
+	var resH='<div class="titreNote">'+this.titreActivite+" - "+this.titrePage+'</div>';
+	var ctn=this.contenu;
+	ctn=ctn.replace(/&/g,"&amp;");
+	ctn=ctn.replace(/</g,"&lt;");
+	ctn=ctn.replace(/>/g,"&gt;");
+	ctn=ctn.replace(/\n/g,"<br>");
+	resH+='<div class="contenuNote">'+ctn+'</div>';
+	resH+='<div class="dateNote">'+afficheDate(this.date)+'</div>';
+	return resH;	
+}
+function afficheDate(date0){
+	if (date0==''){return '';}
+	var indexD=0;
+	var annee=date0.substring(indexD,indexD+4);
+	indexD=5;
+	var mois=date0.substring(indexD,indexD+2);
+	indexD=8;
+	var jour=date0.substring(indexD,indexD+2);
+	var dateS=new Date();
+	dateS.setUTCFullYear(Number(annee),Number(mois)-1,Number(jour));
+	var res;
+	indexD=11;
+	dateS.setUTCHours(Number(date0.substring(indexD,indexD+2)),Number(date0.substring(indexD+3,indexD+5)),Number(date0.substring(indexD+6,indexD+8)));
+	var res=dateS.toLocaleString();
+	res=res.substring(0,res.lastIndexOf(":"));
+	return res;
+}
+</script>
+<style>
+body {overflow-y:auto;height:100%;background-color:#fff;font:13px Tahoma,Geneva,Arial;padding:0px;margin:0px}
+html{margin:0px;height:100%}
+.titreNote{font-weight:bold;font-size:115%;margin-top:10px;}
+.contenuNote{line-height:1.2em;margin-top:6px;}
+.dateNote{font-size:88%;color:#666;margin-top:10px;margin-bottom:52px;}
+#notesU{margin:20px}
+#titreLs{font-weight:bold;color:#1B507A;font-size:170%;margin:20px;margin-bottom:40px}
+</style>
+</head>
+<body onload="chargeNote()">
+<div id="titreLs"></div>
+<div id="notesU"></div>
+<br/></body>
+</html>

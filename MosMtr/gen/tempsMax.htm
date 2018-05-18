@@ -1,0 +1,40 @@
+<html oncontextmenu="return false">
+<head>
+<title>&#160;</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<style>
+body {background-color:#E7E7E4;cursor:default;font:13px Tahoma,Geneva,Arial;margin:20px}
+a{hover:text-decoration:none}
+</style>
+<script>
+var resterPossible=true;
+function initTM(){
+	document.title=window.opener.donneLex(85);
+	setTimeout("finChoixTM()",90000);	
+}
+function finChoixTM(){
+	window.opener.navRequest("suspendAll");
+	resterPossible=false;
+	window.close();	
+}
+function rester(){
+	if (resterPossible){
+		resterPossible=false;
+		window.opener.setTimeout("finTempsAffichage()",window.opener.parent.oSco.maxTempsPage*60000);
+		window.close();
+	}
+}
+</script>
+</head>
+
+<body onload="initTM()" onunload="rester()">
+<script>document.write(window.opener.donneLex(86))</script>
+<br/>
+<br/>
+<a href="javascript:rester()"><script>document.write(window.opener.donneLex(87))</script></a></li>
+<br/><br/>
+<script>document.write(window.opener.donneLex(88))</script>
+
+</body>
+</html>

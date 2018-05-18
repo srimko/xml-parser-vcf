@@ -1,0 +1,25 @@
+<!-- exercice texte a trou -->
+
+<!ENTITY % contenuSPE "trou">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+
+<!ENTITY % elementsExercice SYSTEM "elementsExercice.dtd">
+%elementsExercice;
+
+<!ELEMENT exo (titre,sousTitre?,consigne?,question?,texteSeq,interactions?)>
+<!ATTLIST exo 
+	%attrPages;
+	choixCorrect (oui|non) "non"
+	inserePremier (oui|non) "non"
+	ordreIndifferent (oui|non) "non"
+	retourLigne (oui|non) "non"
+	score CDATA ""
+	disposition CDATA #IMPLIED
+	type CDATA #FIXED "SEQ"
+	numDupli CDATA #IMPLIED>
+
+<!ELEMENT question (%contenuQuestion;)*>
+
+<!ELEMENT texteSeq (%contenuZE;)*>

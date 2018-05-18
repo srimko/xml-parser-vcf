@@ -1,0 +1,48 @@
+<!-- Elements specifiques aux questions  -->
+
+<!ENTITY % contenuQuestion "%contenuZE;">
+
+<!ENTITY % styleR "(nw|ng|wg)">
+
+<!ENTITY % attrCmt 
+	"titre CDATA #IMPLIED
+	pX CDATA #IMPLIED
+	pY CDATA #IMPLIED
+	pL CDATA #IMPLIED
+	pH CDATA #IMPLIED
+	bas CDATA #IMPLIED
+	droite CDATA #IMPLIED
+	duree CDATA #IMPLIED
+	styBulle CDATA #IMPLIED
+	fonduE CDATA #IMPLIED
+	fonduS CDATA #IMPLIED
+	initX CDATA #IMPLIED
+	initY CDATA #IMPLIED
+	vitesse CDATA #IMPLIED
+	defil CDATA #IMPLIED
+	vdefil CDATA #IMPLIED">
+	
+<!ELEMENT interactions (commentaire?|suggestion*)*>
+<!-- comentaire en cas de succes a l'exercice -->
+<!ELEMENT commentaire (%contenuZE;)*>
+<!ATTLIST commentaire
+	%attrCmt;
+	niveau CDATA "3"
+	branche CDATA #IMPLIED
+	orign CDATA #IMPLIED>
+	
+<!ELEMENT suggestion (%contenuZE;)*>
+<!ATTLIST suggestion
+	%attrCmt;
+	num CDATA #IMPLIED
+	ref CDATA #IMPLIED
+	branche CDATA #IMPLIED
+	orign CDATA #IMPLIED>
+	
+<!ELEMENT titre (%formats;)*>
+<!ELEMENT sousTitre (%formats;)*>
+<!ELEMENT consigne (%contenuZE;)*>
+<!ATTLIST consigne 
+	%attrCmt;
+	delai CDATA #IMPLIED>
+

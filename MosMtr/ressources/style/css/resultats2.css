@@ -1,0 +1,27 @@
+.STY_zoneEvalRes{height:50px;margin-bottom:30px;width:410px}
+.STY_scoreAtteint{margin:15px 25px 0 17px;text-align:center;overflow-x:hidden;scrollbar-shadow-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF;scrollbar-track-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-arrow-color:#dae0e6;color:#010101;overflow:auto;display:block;font-size:18px;font-family:'Century Gothic','Avant Garde';}
+.STY_scoreTotal{font:bold 50px Verdana;color:#d21d64;display:inline;}
+.STY_pourcentRequis{font:bold 15px Arial;display:inline;color:#6f6e6e;}
+.STY_zoneEchecEval{height:50px}
+.STY_zoneQuestRes{height:50px}
+.STY_zoneSuccesEval{position:absolute;width:150px;top:620px;left:80px;}
+.STY_zoneLienDiplome{width:202px;top:66px;left:548px;position:absolute;height:32px;}
+.STY_commentaireRes{font:14px Arial;margin:50px 0 0 10px;overflow-x:hidden;scrollbar-shadow-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF;scrollbar-track-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-arrow-color:#dae0e6;color:#01458a;overflow:auto;height:230px;display:block;width:180px;}
+.STY_detailsRes{overflow-x:hidden;padding-right:20px;color:#333333;scrollbar-shadow-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF;scrollbar-track-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-arrow-color:#dae0e6;height:365px;position:absolute;width:682px;left:45px;top:120px;display:block;overflow:auto;}
+.STY_tableauResEntete{font:12px Arial;display:none;color:#333333;}
+.STY_tabResScore{display:none;padding-left:10px;text-align:right;}
+.STY_lienCorrige:hover{text-decoration:none;}
+
+.STY_lienCorrige{font:14px Arial;border-bottom:1px solid #b6b6b6;padding:8px 10px 8px 10px;float:left;border-left-width:0px;border-right-width:0px;border-top-width:0px;text-decoration:none;color:#313131;display:inline-block;width:630px;}
+
+.STY_boutonValider{margin:30px 0 0 13px;z-index:10;}
+.STY_pourcentAtteint{display:inline;}
+.STY_fond{background:url(../media/bgresultat.png) no-repeat;background-position:left top;}
+
+.STY_tabResIco{border-bottom:1px solid #b6b6b6;border-left-width:0px;border-right-width:0px;border-top-width:0px;float:left;}
+.STY_tabResNivCert{display:none;}
+
+
+
+
+

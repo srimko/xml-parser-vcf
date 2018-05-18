@@ -1,0 +1,34 @@
+<!-- exercice glisser-deposer -->
+
+<!ENTITY % contenuSPE "vide">
+
+<!ENTITY % elementsGen SYSTEM "../elementsGen.dtd">
+%elementsGen;
+
+<!ENTITY % elementsExercice SYSTEM "elementsExercice.dtd">
+%elementsExercice;
+
+<!ELEMENT exo (titre,sousTitre?,consigne?,question?,cadres,paires,interactions?)>
+<!ATTLIST exo 
+	%attrPages;
+	score CDATA "30"
+	type CDATA #FIXED "GD"
+	numDupli CDATA #IMPLIED
+	decalageX CDATA #IMPLIED
+	decalageY CDATA #IMPLIED
+	retourManque (1|0) "0"
+	retourIncorrect (1|0) "0"
+	creerPairesFausses (oui|non) "oui">
+
+<!ELEMENT question (%contenuQuestion;)*>
+<!ELEMENT cadres (%contenuZE;)*>
+
+<!ELEMENT paires (paire*)>
+<!ELEMENT paire EMPTY>
+<!ATTLIST paire 
+	idDeplace IDREF #REQUIRED
+	idCible IDREF #REQUIRED
+	styleR %styleR; "ng"
+	poids CDATA #IMPLIED
+	decalageX CDATA #IMPLIED
+	decalageY CDATA #IMPLIED>

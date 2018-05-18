@@ -1,0 +1,19 @@
+{
+  "name": "xmlparser-vcf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xml-parse": "^0.3.1",
+    "xml-parser": "^1.2.1",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "debug": "^3.1.0"
+  }
+}

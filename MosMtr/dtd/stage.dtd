@@ -1,0 +1,217 @@
+<!ELEMENT stage (titre,metadata,sequence?,modules)>
+<!ATTLIST stage 
+	code CDATA ""
+	langue CDATA ""
+	type (admin|scorm) "admin"
+	typeContenu CDATA #IMPLIED
+	style CDATA ""
+	repCOMP CDATA #IMPLIED
+	listeFichiers CDATA #IMPLIED
+	syncMTR CDATA #IMPLIED
+	titreCOMP CDATA #IMPLIED
+	compileQTI CDATA #IMPLIED
+	compileRedir CDATA #IMPLIED
+	compileLMS CDATA #IMPLIED
+	compileMulti CDATA #IMPLIED
+	refGlo CDATA #IMPLIED
+	demarreHTA CDATA #IMPLIED
+	partagerObjectifs CDATA #IMPLIED
+	autoriserLectureLocale CDATA #IMPLIED
+	maxTempsPage CDATA #IMPLIED
+	previsualiserModeComplet CDATA #IMPLIED
+	enregistrerParcoursAuteur CDATA #IMPLIED
+	suiviParcours CDATA #IMPLIED
+	modeleContenu CDATA #IMPLIED
+	figerItemAcheve CDATA #IMPLIED
+	figerItemReussi CDATA #IMPLIED
+	desactiverItemPlan CDATA #IMPLIED
+	fenetreActivite CDATA #IMPLIED
+	ajoutCtn0001 CDATA #IMPLIED
+	scorm12 CDATA #IMPLIED
+	nomRacine CDATA #IMPLIED
+	donneesPartagees CDATA #IMPLIED
+	cacherBoutonsLMS CDATA #IMPLIED
+	secretRTWS CDATA #IMPLIED>
+		 
+<!ELEMENT titre (#PCDATA)>
+
+<!ELEMENT metadata (description,motsCles,contribs?,classifs?)>
+<!ATTLIST metadata
+	version CDATA #IMPLIED
+	statut CDATA #IMPLIED
+	difficulte CDATA #IMPLIED
+	cout CDATA #IMPLIED
+	droits CDATA #IMPLIED
+	droitsDesc CDATA #IMPLIED
+	tempsPrevu CDATA #IMPLIED
+	catalogue CDATA #IMPLIED
+	typeRsrc CDATA #IMPLIED
+	dateCreation CDATA ""
+	dateMAJ CDATA ""
+	langmd CDATA #IMPLIED>
+
+<!ELEMENT motsCles (motCle*)>
+<!ELEMENT motCle (#PCDATA)>
+
+<!ELEMENT contribs (contrib*)>
+<!ELEMENT contrib (#PCDATA)>
+<!ATTLIST contrib
+	role CDATA "author"
+	label CDATA #IMPLIED>
+	
+<!ELEMENT classifs (classif*)>
+<!ELEMENT classif (#PCDATA)>
+<!ATTLIST classif
+	but CDATA "educational objective">
+
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT modules (module|etape|extra)*>
+
+<!ELEMENT module (titre,metadata?,sequence?,etapes)>
+<!ATTLIST module
+	code ID #REQUIRED
+	codeMasque CDATA #IMPLIED
+	invisible (oui|non) "non"
+	inclus (oui|non) "oui">
+
+<!ELEMENT etapes (etape|module|extra)*>
+
+<!ELEMENT etape (nom,metadata?,sequence?,element*,interactions?)>
+<!ATTLIST etape
+	code ID #REQUIRED
+	codeMasque CDATA #IMPLIED
+	type (evaluation|session|reference) "session"
+	niveauRequis CDATA #IMPLIED
+	diplome CDATA #IMPLIED
+	libelleDiplome CDATA #IMPLIED
+	titreDiplome CDATA #IMPLIED
+	evalParcourable CDATA #IMPLIED
+	formEnvoiReponses CDATA #IMPLIED
+	formAffiche CDATA #IMPLIED
+	ordreAleatoire CDATA #IMPLIED
+	nbMaxPages CDATA #IMPLIED
+	exoBloquant (oui|non) "non"
+	scoreNegatif CDATA #IMPLIED
+	exoValideChoixUnique (oui|non) "non"
+	exoSolutions CDATA #IMPLIED
+	evalPageResultats CDATA #IMPLIED
+	stylePgResultats CDATA #IMPLIED
+	evalInteraction (oui|non) "non"
+	evalSuggestions (oui|non) "non"
+	autorisePrecedent CDATA #IMPLIED
+	scoreBinaire (oui|non) "non"
+	forcerReponse (oui|non) "non"
+	forcerRepQuestion CDATA #IMPLIED
+	bloquantSaufAcheve CDATA #IMPLIED
+	autoriserReprise CDATA #IMPLIED
+	passageEntreActivites CDATA #IMPLIED
+	niveauIncomplet CDATA #IMPLIED
+	niveauComplete CDATA #IMPLIED
+	evalEnregistreScore CDATA #IMPLIED
+	href CDATA #IMPLIED
+	invisible (oui|non) "non"
+	inclus (oui|non) "oui"
+	syncFich CDATA #IMPLIED
+	reponsesPrecedentes CDATA #IMPLIED
+	donneesLMS CDATA #IMPLIED
+	variablesPartagees CDATA #IMPLIED
+	limiteTheme CDATA #IMPLIED
+	linaireNonVisite CDATA #IMPLIED
+	selectionThemes CDATA #IMPLIED>
+	
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT element (#PCDATA)>
+<!ATTLIST element
+	ref CDATA #REQUIRED 
+	type (cours|exercice) "cours"
+	cType CDATA ""
+	motsCles CDATA #IMPLIED
+	score CDATA #IMPLIED
+	description CDATA #IMPLIED
+	theme CDATA #IMPLIED
+	dateMAJ CDATA #IMPLIED
+	prerequis CDATA #IMPLIED>
+	
+
+<!ELEMENT interactions (commentaire*)>
+<!ELEMENT commentaire (#PCDATA)>
+<!ATTLIST commentaire 
+	min CDATA ""
+	max CDATA ""
+	branche CDATA #IMPLIED>
+
+<!ELEMENT extra (nom,metadata?,sequence?)>
+<!ATTLIST extra
+	code CDATA #REQUIRED 
+	codeMasque CDATA #IMPLIED 
+	type CDATA #REQUIRED
+	ref CDATA ""
+	href CDATA ""
+	pos CDATA #IMPLIED
+	paramFen CDATA #IMPLIED
+	taille CDATA #IMPLIED
+	invisible (oui|non) "non"
+	inclus (oui|non) "oui">
+	
+<!ELEMENT sequence (objectifs?,regles?)>
+<!ATTLIST sequence
+	choix CDATA #IMPLIED 
+	sortieSurChoix CDATA #IMPLIED 
+	flux CDATA #IMPLIED 
+	bloquerPrecedent CDATA #IMPLIED
+	tempsLimite CDATA #IMPLIED
+	actionTempsLimite CDATA #IMPLIED
+	actionPersoTempsLimite CDATA #IMPLIED
+	limiteTentatives CDATA #IMPLIED
+	scoreValide CDATA #IMPLIED
+	nbMaxActivites CDATA #IMPLIED
+	modeAleatoire CDATA #IMPLIED
+	depiste CDATA #IMPLIED
+	cacherBoutonPrecedent CDATA #IMPLIED
+	cacherBoutonSuivant CDATA #IMPLIED
+	cacherBoutonQuitter CDATA #IMPLIED
+	cacherBoutonSuspendre CDATA #IMPLIED
+	empecheActivation CDATA #IMPLIED
+	choixContraint CDATA #IMPLIED
+	remonterValidation CDATA #IMPLIED
+	remonterCompletion CDATA #IMPLIED
+	poidsScore CDATA #IMPLIED
+	poidsScoreNorm CDATA #IMPLIED
+	utiliserInfoObjCourant CDATA #IMPLIED
+	utiliserInfoProgCourant CDATA #IMPLIED
+	requisPourRempli CDATA #IMPLIED
+	requisPourNonRempli CDATA #IMPLIED
+	requisPourComplete CDATA #IMPLIED
+	requisPourIncomplet CDATA #IMPLIED
+	requisPourScore CDATA #IMPLIED
+	completionParContenu CDATA #IMPLIED
+	validationParContenu CDATA #IMPLIED
+	mesureValidationSiActif CDATA #IMPLIED>
+
+<!ELEMENT regles (regle*)>
+<!ELEMENT regle (condition+)>
+<!ATTLIST regle
+	action CDATA ""
+	titre CDATA #IMPLIED
+	typeRegle CDATA ""
+	combine (tous|un) "tous"
+	ensembleFils (tous|un|aucun|auMoins) "tous"
+	auMoinsMinimum CDATA #IMPLIED>
+	
+<!ELEMENT condition EMPTY>
+<!ATTLIST condition
+	nomCond CDATA ""
+	refObj CDATA #IMPLIED
+	refObjURI CDATA #IMPLIED
+	seuil CDATA #IMPLIED
+	negation CDATA #IMPLIED>
+	
+<!ELEMENT objectifs (objectif*)>
+<!ELEMENT objectif EMPTY>
+<!ATTLIST objectif
+	identifiant CDATA #IMPLIED
+	idURI CDATA #IMPLIED
+	surItem CDATA #IMPLIED
+	lireObjectifGlobal CDATA #IMPLIED
+	ecrireObjectifGlobal CDATA #IMPLIED>

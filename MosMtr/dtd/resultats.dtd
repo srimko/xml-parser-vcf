@@ -1,0 +1,7 @@
+<!-- page resulats eval ... -->
+
+<!ELEMENT pageInterface EMPTY>
+<!ATTLIST pageInterface 
+	type CDATA #FIXED "RES">
+
+		

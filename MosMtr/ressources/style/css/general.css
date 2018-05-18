@@ -1,0 +1,50 @@
+.STY_fond{background:url(../media/bgaccueil.png) no-repeat;font:15px Arial;background-position:left top;color:#333333;cursor:default;height:100%;}
+.STY_fondEditGTR{font:15px Arial;margin:0px;color:#2b2b2b;background-color:#fff;height:100%;}
+.STY_zoneCours{overflow:auto;display:block;top:210px;left:110px;width:620px;position:absolute;height:360px;scrollbar-arrow-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-track-color:#dae0e6;scrollbar-3dlight-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-shadow-color:#FFFFFF;}
+.STY_zoneCommentaire{background:#efefef url(../media/fdcomfixe.png) no-repeat;border:1px solid #80a2c4;overflow-x:hidden;overflow-y:hidden;overflow:auto;display:block;height:408px;top:41px;position:absolute;left:766px;width:192px;background-position:left top;}
+.STY_titreCommentaire{font:bold 18px Arial;margin:0 22px 0 40px;text-decoration:none;text-transform:uppercase;color:#01458a;display:inline-block;padding-top:15px;width:148px;}
+.STY_texteCours{text-justify:distribute;}
+.STY_contenuCommentaire{font:14px Arial;margin:30px 0 0 11px;padding-right:25px;display:block;height:330px;overflow:auto;color:#01458a;scrollbar-arrow-color:#dae0e6;scrollbar-darkshadow-color:#dae0e6;scrollbar-highlight-color:#dae0e6;scrollbar-track-color:#dae0e6;scrollbar-3dlight-color:#FFFFFF;scrollbar-base-color:#FFFFFF;scrollbar-face-color:#FFFFFF;scrollbar-shadow-color:#FFFFFF;overflow-x:hidden;}
+.STY_btnStd{padding-left:1px;padding-right:1px;padding-bottom:1px;padding-top:1px;width:120px;font-family:Tahoma,Arial;font-size:14px;margin-left:10px;cursor:default}
+.STY_sousTitrePage{color:#78838B;float:right;padding-left:10px;padding-top:3px;letter-spacing:1px}
+.STY_bulleCours1{font:13px Arial;border:1px solid #80a2c4;padding:5px;color:#01458a;background-color:#efefef;}
+.STY_bulleCours2{font:13px Arial;border:1px solid #80a2c4;padding:5px;background-color:#c7cfdb;color:#01458a;}
+.STY_lienBulle1{font:13px Arial;color:#01458a;text-decoration:underline;}
+.STY_paraBascule{font:12px Arial;width:490px;vertical-align:middle;}
+.STY_paraBasculeTitre{font:bold 12px Arial;padding:3px 5px 3px 10px;background-color:#01458a;color:#fff;display:block;text-decoration:none;}
+.STY_paraBasculeCorps{font:12px Arial;padding:0 9px 0 25px;color:#000;}
+.STY_zoneExplore2{border:1px solid #e10226;padding:2px;opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);color:#e60005;text-align:center;font-weight:bold;}
+.STY_zoneExplore2Dessus{border:1px solid #e10226;padding:1px;color:#535353;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);text-align:center;opacity:0.6;font-weight:bold;}
+.STY_itemListeAvant{visibility:hidden;}
+.STY_zoneExplore{cursor:pointer;text-align:left;}
+h2{font:20px Arial;color:#2b2b2b;}
+code{color:#AEAFB0;}
+ol{list-style-type:decimal;}
+li{vertical-align:middle;padding-left:15px;}
+hr{height:3px;background-color:#D75151;}
+a:hover{text-decoration:none;}
+.STY_paraBasculeIcone{margin:1px 1px 0 0;float:left;}
+.STY_lienBulle2{font-family:'Century Gothic','Avant Garde';font-size:13px;text-decoration:underline;color:#010101;}
+.STY_lienComt{font:15px Arial;text-decoration:underline;color:#01458a;}
+html{height:100%;}
+.STY_numeroPage{font:24px Verdana;display:inline-block;float:right;color:#ad00b2;}
+.STY_msgInfoBlanc{margin:210px 0 0 165px;}
+.STY_boutonInit{display:inline;}
+.STY_boutonValider{margin-right:4px;display:inline;}
+.STY_titreFormation{right:5px;top:0px;position:absolute;font-family:'Century Gothic','Avant Garde';font-size:30px;color:#575757;}
+.STY_lienGlossaire{font:15px Arial;text-decoration:underline;color:#e10226;}
+.STY_barreProgresJauge{border-width:0px;border-color:#fff;}
+/*.STY_barreProgresJauge{border-left-width:0px;border-bottom-width:0px;border-right-width:0px;border-top-width:0px;border-left-color:#fff;border-bottom-color:#fff;border-right-color:#fff;border-top-color:#fff;font-size:8px;}*/
+.STY_barreProgres{border:1px solid #666666;padding:1px;font-size:2px;color:#0099cc;position:absolute;top:550px;left:19px;width:345px;height:3px;background-color:#fff;}
+h3{font:15px Arial;color:#333333;}
+.STY_tempsRestant{display:inline;}
+.STY_boutonPrecedent{display:inline;}
+.STY_boutonSuivant{margin-left:2px;display:inline;}
+ul{list-style-image:url(../media/pucetxt.gif);}
+.STY_fondComtGTR{font:14px Arial;color:#01458a;}
+.STY_lienDansZoneComt{font:14px Arial;color:#01458a;}
+.STY_zoneExploreDessus{border:1px solid #e10226;cursor:pointer;}
+.STY_zoneTitre{background:url(../media/bgtitre.png) no-repeat;color:#fff;font-family:Arial;width:960px;position:absolute;display:block;background-position:left top;}
+.STY_nomModule{display:inline;font-size:13px;font-style:italic;margin-left:10px;}
+.STY_nomEtape{display:inline;margin-left:40px;font-size:16px;font-weight:bold;}
+.STY_titrePage{font-size:16px;font-weight:bold;display:inline;}

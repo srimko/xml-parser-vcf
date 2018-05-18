@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE exo SYSTEM "../../MosMtr/dtd/contenu/exoQC.dtd">
+    <?xml-stylesheet type="text/xsl" href="MosMtr/ressources/style/xsl/contenu/exoQC.xsl" ?>
+        <exo score="10" type="QC" multiple="0" boutonsRep="middle" afficheBordure="false" partieDetail="oui" disposition="liste" boutonsDisp="droite">
+            <titre>Ordre et rangement - environnement / Q41</titre>
+            <consigne>Sélectionnez la bonne réponse, puis <span class="STY_Rouge">validez<clipAV id="clipAV9285" width="29" height="29" lecteur="Flash" src="q41_question_global.mp3" demarreAuto="true" /></span></consigne>
+            <question>
+                <p>Dans une benne réservée aux DIB (ou déchets non dangereux), je peux jeter ... ?</p>
+            </question>
+            <reponses>
+                <reponse id="rep635">
+                    <table cellpadding="2" cellspacing="0" valign="top" border="0">
+                        <tr>
+                            <td valign="top">                                            </td>
+                            <td valign="top">
+                                <p>
+                                    <br />Des aérosols</p>
+                            </td>
+                            <td valign="top">
+                                <lienDetail num="2"><img vspace="10" border="0" src="btn_son.png" width="30" height="35" id="MosImg189" /></lienDetail>
+                            </td>
+                        </tr>
+                    </table>
+                </reponse>
+                <reponse id="rep794">
+                    <table cellpadding="3" cellspacing="0" valign="top" border="0">
+                        <tr>
+                            <td valign="top">                                            </td>
+                            <td valign="top">
+                                <br />Des gravats de béton</td>
+                            <td valign="top">
+                                <lienDetail num="3"><img vspace="10" border="0" src="btn_son.png" width="30" height="35" id="MosImg556" /></lienDetail>
+                            </td>
+                        </tr>
+                    </table>
+                </reponse>
+                <reponse id="rep494">
+                    <table cellpadding="3" cellspacing="0" valign="top" border="0">
+                        <tr>
+                            <td valign="top">                                            </td>
+                            <td valign="top">
+                                <br />Des bidons vides ayant contenus des produits chimiques dangereux</td>
+                            <td valign="top">
+                                <lienDetail num="4"><img vspace="10" border="0" src="btn_son.png" width="30" height="35" id="MosImg670" /></lienDetail>
+                            </td>
+                        </tr>
+                    </table>
+                </reponse>
+                <reponse id="rep915" styleR="nw">
+                    <table cellpadding="3" cellspacing="0" valign="top" border="0">
+                        <tr>
+                            <td valign="top">                                            </td>
+                            <td valign="top">
+                                <br />Des chutes de plastiques</td>
+                            <td valign="top">
+                                <lienDetail num="4"><img vspace="10" border="0" src="btn_son.png" width="30" height="35" id="MosImg115" /></lienDetail>
+                            </td>
+                        </tr>
+                    </table>
+                </reponse>
+            </reponses>
+            <interactions>
+                <commentaire>
+                    <p align="center">C'est exact !</p>
+                    <p>Les autres types de déchets doivent être mis dans des bennes spécifiques.
+                        <clipAV id="clipAV4720" width="29" height="29" lecteur="Flash" src="q41_fb_ok.mp3" demarreAuto="true" />
+                    </p>
+                </commentaire>
+                <suggestion ref="[solution]">
+                    <p align="center">C'est faux</p><span style="COLOR: #01458a; TEXT-DECORATION: "><p>Dans une benne DIB, je peux jeter des chutes de plastiques (sauf si une benne plastique est disponible)<clipAV id="clipAV8955" width="29" height="29" lecteur="Flash" src="q41_fb_no.mp3" demarreAuto="true" /></p></span></suggestion>
+                <suggestion num="1" titre="" ref="0" duree="9999999999999" pX="53" pY="131"><img src="image4.png" width="200" height="300" id="MosImg9" /></suggestion>
+                <suggestion num="2" titre="Consigne">Sélectionnez la bonne réponse, puis <span class="STY_Rouge">validez<clipAV id="clipAV181" width="2" height="2" lecteur="Flash" src="q41_reponse1.mp3" demarreAuto="true" /></span></suggestion>
+                <suggestion num="3" titre="Consigne">Sélectionnez la bonne réponse, puis <span class="STY_Rouge">validez<clipAV id="clipAV9384" width="2" height="2" lecteur="Flash" src="q41_reponse2.mp3" demarreAuto="true" /></span></suggestion>
+                <suggestion num="4" titre="Consigne">Sélectionnez la bonne réponse, puis <span class="STY_Rouge">validez<clipAV id="clipAV2152" width="2" height="2" lecteur="Flash" src="q41_reponse3.mp3" demarreAuto="true" /></span></suggestion>
+                <suggestion num="5" titre="Consigne">Sélectionnez la bonne réponse, puis <span class="STY_Rouge">validez<clipAV id="clipAV633" width="2" height="2" lecteur="Flash" src="q41_reponse4.mp3" demarreAuto="true" /></span></suggestion>
+            </interactions>
+        </exo>

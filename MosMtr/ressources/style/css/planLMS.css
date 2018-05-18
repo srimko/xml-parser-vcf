@@ -1,0 +1,45 @@
+.STY_fondPlanLMS{font:13px Arial;margin:0px 0 0 0px;background-repeat:no-repeat;background-position:left top;cursor:default;}
+a{text-decoration:none;color:#5d3061;}
+a:visited{}
+.STY_planTitreFormation{font-weight:bold;margin-bottom:15px;font-size:13px;padding-right:10px;margin-top:7px;margin-right:10px}
+.STY_groupesMGR{margin-top:20px;padding-top:10px;border-left-width:0px;border-right-width:0px;border-bottom-width:0px;border-top-width:1px;border-style:solid;border-top-color:#c0c0c0}
+.STY_planItemsGrp{margin-top:5px;margin-bottom:15px;margin-left:25px}
+.STY_planTitreGroupe{font-weight:bold;font-size:13px}
+.STY_planTitreModule{display:block;width:300px;}
+.STY_planTitreEtape{width:300px;}
+.STY_planPages{font:14px 'Century Gothic','Avant Garde';display:block;}
+.STY_planTitrePage{width:300px;display:block;}
+a.STY_planLienTitrePageComplete:visited{}
+a.STY_planLienTitreEtapeComplete:visited{}
+a.STY_planLienTitreModuleComplete:visited{}
+a.STY_planLienTitreModuleComplete:hover{}
+a.STY_planLienTitreEtapeComplete:hover{}
+.STY_planLienTFormComplete{}
+a.STY_planLienTitrePageDesactive:visited{}
+.STY_planLienTitreEtapeDesactive{}
+a.STY_planLienTitreEtapeDesactive:visited{}
+.STY_planLienTitreModuleDesactive{}
+a.STY_planLienTitreModuleDesactive:visited{}
+.STY_planLienItemGrpSel{text-decoration:underline;padding-bottom:1px;padding-top:1px;padding-left:2px;padding-right:2px;display:inline-block;width:80%}
+.STY_planLienTitreGroupeSel{;text-decoration:underline;padding-bottom:1px;padding-top:1px;padding-left:2px;padding-right:2px;display:inline-block;width:80%}
+a.STY_planLienTitrePage:hover{}
+a.STY_planLienTitrePageIncomplete:hover{}
+a.STY_planLienTitreEtapeIncomplete:hover{}
+a.STY_planLienTitreModuleIncomplete:hover{}
+a.STY_planLienTitrePageComplete:hover{}
+a.STY_planLienTitreGroupe:hover{}
+a.STY_planLienItemGrp:hover{padding-left:2px;padding-right:1px}
+.STY_infoDyn{color:#c00000;font-style:italic;font-size:11px}
+.STY_planLienTitrePage{padding-bottom:3px;padding-top:3px;padding-left:40px;font-size:12px;color:#3d3d3d;display:block;font-family:'Century Gothic','Avant Garde';}
+.STY_planLienItemGrp{display:inline-block;width:80%;padding-left:2px;padding-right:1px}
+.STY_planLienTitrePageIncomplete{}
+.STY_planLienTitreGroupe{padding-right:10px;display:inline-block;width:80%}
+.STY_planArborescence{display:block;font-size:12px;}
+.STY_bordureFenPlanLMS{overflow:auto;}
+.STY_planLienTitreModule{padding-top:7px;padding-bottom:7px;padding-left:25px;font-size:14px;color:#345b7d;font-family:Arial;}
+.STY_planLienTitreEtape{padding-top:7px;padding-bottom:7px;padding-left:25px;font-size:14px;color:#345b7d;font-family:Arial;}
+.STY_zoneLMS{margin-top:30px}
+.STY_tdImgPlanModule{display:none;width:0px;vertical-align:middle;cursor:pointer;}
+.STY_planLienTitreModuleOuvert{padding-top:7px;padding-bottom:7px;padding-left:25px;font-size:14px;color:#345b7d;font-family:Arial;}
+.STY_planLienTitreEtapeOuvert{padding-top:7px;padding-bottom:7px;padding-left:25px;font-size:14px;color:#345b7d;font-family:Arial;}
+.STY_planLienTitrePageSel{padding-bottom:3px;padding-top:3px;padding-left:40px;font-size:12px;color:#3d3d3d;display:block;font-family:'Century Gothic','Avant Garde';}
